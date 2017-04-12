@@ -7,6 +7,9 @@
 a{
     text-decoration: none;
 }
+body{
+    background:#FAFAFA;
+}
 /*导航栏*/
 header{
     width:100%;
@@ -48,6 +51,7 @@ header > .inside-w > .nav-right > li > a{
 section.search{
     width:100%;
     height:100px;
+    background: #fff;
 }
 section.search > .inside-w{
     width:1190px;
@@ -57,8 +61,10 @@ section.search > .inside-w{
 section.search > .inside-w > .logo{
     width:190px;
     height:100%;
-    background:#F2F2F2;
     float:left;
+    text-align: center;
+    padding-top:20px;
+    box-sizing: border-box;
 }
 section.search > .inside-w > div.input{
     width:625px;
@@ -99,13 +105,13 @@ section.search > .inside-w > div.input > ul.search-content > li{
 section.banner-content{
     width:100%;
     height:536px;
-    background:pink;
+    background: #fff;
 }
 /*banner导航*/
 section.banner-content > div.inside-w{
     width:100%;
     height:36px;
-    background:#FF43A5;
+
 }
 section.banner-content > div.inside-w >  div.banner-nav{
     width:1190px;
@@ -113,6 +119,7 @@ section.banner-content > div.inside-w >  div.banner-nav{
     margin:0 auto;
     line-height: 36px;
     position: relative;
+    background:#FF43A5;
 }
 section.banner-content > div.inside-w >  div.banner-nav > div.goods-class{
     width:190px;
@@ -140,8 +147,9 @@ section.banner-content > div.inside-w > div.banner-nav > ul.goods-list > li > a{
 }
 /*banner内容img*/
 section.banner-content > div.banner{
-    width:100%;
+    width:1190px;
     height:500px;
+    margin:0 auto;
     position: relative;
 }
 section.banner-content > div.banner > ul.img{
@@ -156,6 +164,11 @@ section.banner-content > div.banner > ul.img > li{
     left:0;
     top:0;
     text-align: center;
+    opacity: 0;
+    transition: all 1.5s;
+}
+section.banner-content > div.banner > ul.img > li.img-one{
+    opacity: 1;
 }
 section.banner-content > div.banner > ul.img > li:first-child{
     background:#E8E8E8;
@@ -184,15 +197,18 @@ section.banner-content > div.banner > ul.circle{
     justify-content: space-between;
 }
 section.banner-content > div.banner > ul.circle > li{
-    width:18px;
-    height:18px;
-    background:yellow;
+    width:12px;
+    height:12px;
+    background:#EDEDED;
     border-radius: 50%;
 }
+section.banner-content > div.banner > ul.circle > li.circle-one{
+    background:#FF43A5;
+}
 section.banner-content > div.banner a.left,section.banner-content > div.banner a.right{
-	width:30px;
+	width:60px;
 	height: 60px;
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.1);
 	position: absolute;
 	top:50%;
 	margin-top: -15px;
@@ -201,14 +217,198 @@ section.banner-content > div.banner a.left,section.banner-content > div.banner a
 	font-family: "宋体";
 	line-height: 60px;
 	text-align: center;
+    border-radius: 50%;
+    display:none;
 }
-section.banner-content > div.banner a.left{
-	left: 0;
+section.banner-content > div.banner:hover a.left{
+	left: 20px;
+    display:block;
 }
-section.banner-content > div.banner a.right{
-	right: 0;
+section.banner-content > div.banner:hover a.left:hover{
+    background: rgba(0,0,0,0.3);
+}
+section.banner-content > div.banner:hover a.right{
+	right: 20px;
+    display:block;
+}
+section.banner-content > div.banner:hover a.right:hover{
+    background: rgba(0,0,0,0.3);
 }
 
+/*选项卡开始*/
+.tab{
+	width:1190px;
+	margin: 30px auto;
+}
+.tab .tab-top{
+	width:700px;
+	height: 30px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.tab .tab-top li{
+	width: 87px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	background-image: url(../img/bg1.png);
+	background-size: 87px;
+	margin-right: 13px;
+}
+.tab .control{
+	width: 1190px;
+	height: 420px;
+	margin: 0 auto;
+}
+.tab .control ul.tab-bottom{
+	width: 1190px;
+	height: 420px;
+	margin: 0 auto;
+	display: none;
+}
+.tab .control ul.first{
+	display: block;
+}
+.tab .control ul.tab-bottom li{
+	width: 199px;
+	height: 420px;
+	float: left;
+	background: #D2FCBD;
+	border-right: 1px solid #CCCCCC;
+}
+.tab .control ul.tab-bottom li div:first-child{
+	border-bottom: 1px solid #CCCCCC;
+}
+.tab .control ul.tab-bottom li div{
+	height: 210px;
+}
+.tab .control ul li:nth-child(1),.tab .control ul li:nth-child(6){
+	width: 190px;
+	height: 420px;
+}
+.tab .control ul li:nth-child(6){
+	border: 0;
+}
+/*选项卡结束*/
+
+.floor1{
+	width: 1190px;
+	height: 385px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.floor1 .f1-left{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.floor1 h3{
+	width:100%;
+	height: 45px;
+	line-height: 45px;
+}
+.floor1 .f1-left .f1-left-l{
+	width: 50%;
+	height: 340px;
+	background: #DAD9DE;
+	float: left;
+}
+.floor1 .f1-left .f1-left-r{
+	width: 50%;
+	float: left;
+}
+.floor1 .f1-left .f1-left-r div{
+	width: 100%;
+	height: 85px;
+	background: red;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.floor1 .f1-right{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.floor1 .f1-right .f1-right-t{
+	width: 100%;
+	height: 145px;
+	background: #39C349;
+}
+.floor1 .f1-right .f1-right-b{
+	height: 240px;
+}
+.floor1 .f1-right .f1-right-b div{
+	width: 33.33%;
+	height: 195px;
+	float: left;
+}
+.floor1 .f1-right .f1-right-b div img{
+	width:150px;
+	height: 150px;
+	margin-left: 20px;
+	border: 1px solid #000;
+}
+.floor1 .f1-right .f1-right-b div p{
+	margin-left: 20px;
+}
+
+/*二楼*/
+section.floor2{
+    width:1190px;
+    height:385px;
+    margin:0 auto 30px;
+    display:flex;
+}
+section.floor2  div.title{
+    width:100%;
+    height:45px;
+    background: blue;
+    float:left;
+}
+section.floor2 > div.f2-left{
+    width:595px;
+    height:100%;
+    padding-right: 15px;
+    box-sizing: border-box;
+    border-right:1px solid #F2F2F2;
+}
+section.floor2 > div.f2-left > div.content-l{
+    width:50%;
+    height:170px;
+    background:pink;
+    float:left;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+section.floor2 > div.f2-left > div.content-l > div  {
+    width:135px;
+    height:170px;
+    background: red;
+    float: left;
+}
+
+section.floor2 > div.f2-left > div.content-l:nth-child(3)~div.content-l{
+    border-top:1px solid #F2F2F2;
+}
+section.floor2 > div.f2-right{
+    width:580px;
+    height:100%;
+    margin-left: 15px;
+}
+section.floor2 > div.f2-right > div.content-r{
+    width:186px;
+    height:340px;
+    background:yellow;
+    float:left;
+    padding-left:10px;
+    box-sizing: border-box;
+}
+section.floor2 > div.f2-right > div.content-r:nth-child(2)~div.content-r{
+    margin-left:10px;
+}
 
 /*特别推荐开始*/
 .recommend{
@@ -271,3 +471,50 @@ section.banner-content > div.banner a.right{
     font-size: 12px;
 }
 /*特别推荐结束*/
+
+/*猜你喜欢*/
+section.like{
+    width:1190px;
+    height:auto;
+    margin:0 auto;
+}
+section.like > h3{
+    width:100%;
+    height:47px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 47px;
+}
+section.like > ul.like-content{
+    width:100%;
+    height:auto;
+    border-top: 1px solid #FF43A5;
+    padding-top:10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section.like > ul.like-content > li{
+    width:230px;
+    height:319px;
+    background: #fff;
+    box-sizing: border-box;
+    border-top:0;
+    margin-top:10px;
+    padding:2px;
+}
+section.like > ul.like-content > li img{
+    width:100%;
+}
+section.like > ul.like-content > li p{
+    margin:5px 0;
+    padding:0 5px;
+    box-sizing: border-box;
+    color:#333;
+    font-size: 14px;
+}
+section.like > ul.like-content > li h4{
+    font-size: 20px;
+    font-weight: normal;
+    color:#ff43a5;
+}
