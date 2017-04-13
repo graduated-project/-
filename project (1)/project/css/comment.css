@@ -1,0 +1,577 @@
+/*头部导航*/
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '宋体';
+}
+a{
+    text-decoration: none;
+}
+body{
+    background:#FAFAFA;
+}
+/*导航栏*/
+header{
+    width:100%;
+    height:36px;
+    background:#FAFAFA;
+    font-size: 14px;
+}
+header > .inside-w{
+    width:1190px;
+    height:100%;
+    margin:0 auto;
+    padding:0 20px;
+    box-sizing: border-box;
+}
+header > .inside-w > .nav-left{
+    width:auto;
+    height:100%;
+    line-height: 36px;
+    float:left;
+    color:#FF43A5;
+}
+header > .inside-w > .nav-right{
+    width:auto;
+    height:100%;
+    float:right;
+    line-height: 36px;
+}
+header > .inside-w > .nav-right > li{
+    float:left;
+    text-align: center;
+    color:#F2F2F2;
+}
+header > .inside-w > .nav-right > li > a{
+    color:#999;
+    font-size: 12px;
+    margin:0 15px;
+}
+header > .inside-w > .nav-right > li:hover > a{
+    color:#FF43A5;
+}
+/*导航栏下面的搜索栏*/
+section.search{
+    width:100%;
+    height:100px;
+    background: #fff;
+    position: relative;
+}
+section.search > .inside-w{
+    width:1190px;
+    height:100%;
+    margin:0 auto;
+}
+section.search > .inside-w > .logo{
+    width:190px;
+    height:100%;
+    float:left;
+    text-align: center;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+section.search > .inside-w > a.cart{
+    display: block;
+    width:200px;
+    height:100%;
+    position: absolute;
+    right:100px;
+    top:0;
+    line-height: 100px;
+    color:#999;
+    font-size: 14px;
+}
+section.search > .inside-w > a.cart > div.down{
+    width:200px;
+    height:100px;
+    background:#fff;
+    position: absolute;
+    top:74px;
+    right:95px;
+    z-index:10000;
+    box-shadow: 0 0 1px 2px #fafafa;
+    text-align: center;
+    display:none;
+}
+section.search > .inside-w > a.cart > div.block{
+    display:block;
+}
+section.search > .inside-w > a.cart > span{
+    margin-bottom: 5px;
+}
+section.search > .inside-w > div.input{
+    width:625px;
+    height:100px;
+    margin:0 auto;
+    padding-top:26px;
+    box-sizing: border-box;
+}
+section.search > .inside-w > div.input > input#search{
+    width:490px;
+    height:36px;
+    border: 2px solid #FF43A5;
+    box-sizing: border-box;
+    float:left;
+}
+section.search > .inside-w > div.input > input#btn{
+    width:135px;
+    height:36px;
+    float:left;
+    border: 0;
+    background:#FF43A5;
+    color:#fff;
+    font-size: 16px;
+}
+section.search > .inside-w > div.input > ul.search-content{
+    width:100%;
+    height:auto;
+    float:left;
+}
+section.search > .inside-w > div.input > ul.search-content > li{
+    float:left;
+    font-size: 12px;
+    margin-top:10px;
+    margin-right:10px;
+}
+section.search > .inside-w > div.input > ul.search-content > li > a{
+    color:#999;
+}
+section.search > .inside-w > div.input > ul.search-content > li:hover > a{
+    color:#FF43A5;
+}
+/*banner*/
+section.banner-content{
+    width:100%;
+    height:486px;
+    background: #fff;
+    overflow: hidden;
+}
+/*banner导航*/
+section.banner-content > div.inside-w{
+    width:100%;
+    height:36px;
+}
+section.banner-content > div.inside-w >  div.banner-nav{
+    width:1190px;
+    height:36px;
+    margin:0 auto;
+    line-height: 36px;
+    position: relative;
+    background:#FF43A5;
+}
+section.banner-content > div.inside-w >  div.banner-nav > div.goods-class{
+    width:190px;
+    height:100%;
+    background:#FC0083;
+    float:left;
+    text-align: center;
+    font-size: 18px;
+    color:#fff;
+}
+section.banner-content > div.inside-w > div.banner-nav > ul.goods-list{
+    width:auto;
+    height:100%;
+    padding: 0 30px;
+    float: left;
+    display: flex;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+section.banner-content > div.inside-w > div.banner-nav > ul.goods-list > li{
+    margin-right:25px;
+}
+section.banner-content > div.inside-w > div.banner-nav > ul.goods-list > li > a{
+    color:#fff;
+}
+/*banner内容img*/
+section.banner-content > div.banner{
+    width:1190px;
+    height:450px;
+    margin:0 auto;
+    position: relative;
+}
+section.banner-content > div.banner > ul.img{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+section.banner-content > div.banner > ul.img > li{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    text-align: center;
+    opacity: 0;
+    transition: all 1.5s;
+}
+section.banner-content > div.banner > ul.img > li.img-one{
+    opacity: 1;
+}
+section.banner-content > div.banner > ul.img > li:first-child{
+    background:#E8E8E8;
+}
+section.banner-content > div.banner > ul.img > li:nth-child(2){
+    background:#E8E8E8;
+}
+section.banner-content > div.banner > ul.img > li:nth-child(3){
+    background:#39C349;
+}
+section.banner-content > div.banner > ul.img > li:nth-child(4){
+    background:#DAD9DE;
+}
+section.banner-content > div.banner > ul.img > li:nth-child(5){
+    background:#BEF3F9;
+}
+section.banner-content > div.banner > ul.circle{
+    width:150px;
+    height:20px;
+    position: absolute;
+    left:50%;
+    bottom:20px;
+    margin-left:-75px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+section.banner-content > div.banner > ul.circle > li{
+    width:12px;
+    height:12px;
+    background:#EDEDED;
+    border-radius: 50%;
+}
+section.banner-content > div.banner > ul.circle > li.circle-one{
+    background:#FF43A5;
+}
+section.banner-content > div.banner a.left,section.banner-content > div.banner a.right{
+    width:60px;
+    height: 60px;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    top:50%;
+    margin-top: -15px;
+    font-size: 30px;
+    color: #fff;
+    font-family: "宋体";
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    display:none;
+}
+section.banner-content > div.banner:hover a.left{
+    left: 20px;
+    display:block;
+}
+section.banner-content > div.banner:hover a.left:hover{
+    background: rgba(0,0,0,0.3);
+}
+section.banner-content > div.banner:hover a.right{
+    right: 20px;
+    display:block;
+}
+section.banner-content > div.banner:hover a.right:hover{
+    background: rgba(0,0,0,0.3);
+}
+/*右侧固定栏*/
+section.fixed-r{
+    width:40px;
+    height:100%;
+    position: fixed;
+    right:0;
+    top:0;
+    background: #444851;
+}
+section.fixed-r li:hover{
+    background:#ED145B;
+}
+
+section.fixed-r > ul.btom{
+    width:100%;
+    height:114px;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    padding:10px 0;
+}
+section.fixed-r > ul.btom > li{
+    width:100%;
+    height:38px;
+    cursor: inherit;
+    padding:1px ;
+    box-sizing: border-box;
+    position: relative;
+}
+section.fixed-r > ul.btom > li > a{
+    width:17px;
+    height:14px;
+    margin:6px  auto;
+    overflow: hidden;
+    display: block;
+}
+section.fixed-r > ul > li > a{
+    background-image: url("../img/index/ibar_sprites.png");
+}
+
+section.fixed-r > ul.btom > li:last-child > a{
+    background-position: 0 -201px;
+    margin-top:10px;
+}
+section.fixed-r > ul.btom > li:nth-child(2) > a{
+    background-position: 0 -175px;
+    margin-top:10px;
+}
+section.fixed-r > ul.btom > li > div.top{
+    width:100px;
+    height:38px;
+    background:#444851;
+    position: absolute;
+    right:80px;
+    top:0;
+    text-align: center;
+    line-height: 38px;
+    color:#fff;
+    font-size: 14px;
+    display:none;
+    z-index:100;
+}
+
+section.fixed-r > ul.btom > li:nth-child(2):hover > a{
+    background-position: 23px -175px;
+}
+section.fixed-r > ul.btom > li:nth-child(1) > a{
+    width:18px;
+    height:18px;
+    background-position: 0 -302px;
+
+}
+section.fixed-r > ul.btom > li:nth-child(1) > div.code{
+    width:150px;
+    height:150px;
+    background:red;
+    position: absolute;
+    bottom: 0;
+    right:40px;
+    display: none;
+}
+section.fixed-r > ul.btom > li:nth-child(1):hover > div.code{
+    display:block;
+}
+section.fixed-r > ul.center{
+    width:100%;
+    height:114px;
+    position: absolute;
+    left:0;
+    bottom:205px;
+}
+section.fixed-r > ul.center > li{
+    width:100%;
+    height:38px;
+    padding:1px;
+    box-sizing: border-box;
+    position: relative;
+}
+section.fixed-r > ul.center > li > div{
+    width:100px;
+    height:38px;
+    background:#444851;
+    position: absolute;
+    right:80px;
+    top:0;
+    text-align: center;
+    line-height: 38px;
+    color:#fff;
+    font-size: 14px;
+    display:none;
+    z-index:100;
+}
+section.fixed-r > ul > li > div > div.triangle{
+    width:0;
+    height: 0;
+    background: rgba(0,0,0,0);
+    border: 8px solid rgba(0,0,0,0);
+    position: absolute;
+    right:-16px;
+    top:10px;
+    border-left: 8px solid #444851;
+}
+section.fixed-r > ul.center > li > a{
+    overflow: hidden;
+    display: block;
+}
+section.fixed-r > ul.center > li:last-child > a{
+    width: 11px;
+    height:24px;
+    background-position: -4px -110px;
+    margin:7px auto;
+}
+section.fixed-r > ul.center > li:last-child:hover > a{
+    background-position: 20px -110px;
+}
+section.fixed-r > ul.center > li:nth-child(2)> a{
+    width: 18px;
+    height:15px;
+    background-position: 0 -85px;
+    margin:11px auto;
+}
+section.fixed-r > ul.center > li:nth-child(2):hover> a{
+    background-position: 23px -85px;
+}
+section.fixed-r > ul.center > li:nth-child(1)> a{
+    width: 18px;
+    height:18px;
+    margin:10px auto;
+    background-position: -0px -57px;
+}
+section.fixed-r > ul.center > li:nth-child(1):hover> a{
+    background-position: 23px -57px;
+}
+section.fixed-r > div.shopping{
+    width:100%;
+    height: 156px;
+    position: absolute;
+    left:0;
+    bottom:333px;
+    border-bottom: 1px solid #575B64;
+    border-top: 1px solid #575B64;
+    padding:20px 0 5px;
+    box-sizing: border-box;
+}
+section.fixed-r > div.shopping:hover{
+    background:#ED145B;
+}
+section.fixed-r > div.shopping > a{
+    display: block;
+    width:23px;
+    height:18px;
+    margin:0 auto;
+    background-image: url("../img/index/ibar_sprites.png");
+    background-position: 0 -29px;
+}
+section.fixed-r > div.shopping:hover > a{
+    background-position: 23px -29px;
+}
+section.fixed-r > div.shopping > span{
+    width:14px;
+    height:auto;
+    display: block;
+    margin:8px auto;
+    text-align: center;
+    color:#fff;
+    font-size: 14px;
+}
+section.fixed-r > div.shopping > span:last-of-type{
+    width:23px;
+    height:23px;
+    background:#ED145B;
+    border-radius: 50%;
+    line-height: 23px;
+    text-align: center;
+}
+section.fixed-r > div.person{
+    width:100%;
+    height:38px;
+    position: absolute;
+    left:0;
+    bottom:510px;
+}
+section.fixed-r > div.person:hover{
+    background:#ED145B;
+}
+section.fixed-r > div.person > a{
+    width:18px;
+    height:19px;
+    display: block;
+    margin:9px auto;
+    background-image: url("../img/index/ibar_sprites.png");
+}
+section.fixed-r > div.person:hover > a{
+    background-position: 23px 0;
+}
+section.fixed-r > div.person > div.per-expend{
+    width:267px;
+    height:185px;
+    background:#fff;
+    position: absolute;
+    top:0;
+    right:40px;
+    box-shadow: 0 0 1px 1px #ccc;
+    border-radius: 5px;
+    display:none;
+    text-align: center;
+    padding-top: 30px ;
+    box-sizing: border-box;
+}
+section.fixed-r > div.person > div.per-expend > div.triangle{
+    width:0;
+    height: 0;
+    border: 8px solid rgba(0,0,0,0);
+    position: absolute;
+    right:-16px;
+    top:10px;
+    border-left: 8px solid #fff;
+}
+section.fixed-r > div.person > div.per-expend > p{
+    margin:15px;
+}
+section.fixed-r > div.person > div.per-expend > p > a{
+    color:#333;
+    font-size: 14px;
+}
+/*底部介绍*/
+section.foot{
+    width:100%;
+    height: 254px;
+    margin: 0 auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #fcfcfc;
+}
+section.foot .foot-details{
+    width: 1140px;
+    height:100%;
+}
+section.foot img{
+    margin-left: 115px;
+}
+section.foot dl{
+    width: 228px;
+    height: 180px;
+    border-top: 1px solid #ccc;
+    float: left;
+    text-align: center;
+    color: #999999;
+}
+section.foot dl dt{
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+}
+section.foot dl dd{
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+/*footer开始*/
+footer{
+    width: 100%;
+    height: 200px;
+    background: #404040;
+    margin-top: 30px;
+}
+footer p{
+    font-size: 12px;
+    width: 1190px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+footer p span{
+    color: #999999;
+}
+footer p a{
+    color: #cccccc;
+}
